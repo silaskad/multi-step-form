@@ -22,6 +22,7 @@
         
         box-shadow: rgba(123, 119, 119, .15) 1px 12px 24px 1px;
         padding: 2rem 1rem;
+        z-index: 1;
     }
 
     #form .form_sidebar {
