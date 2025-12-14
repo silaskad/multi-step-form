@@ -1,0 +1,89 @@
+@media only screen and (min-width: 0rem) {
+    #form {
+        background: var(--clr-neutral-blue100);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-shadow: rgba(123, 119, 119, .15) 1px 2px 14px;
+    }
+
+    .form_fields {
+        position: relative;
+        top: calc(var(--form-offset) * -1);
+        left: 0;
+        width: var(--form-width);
+        /* use pixel to keep this height fixed */
+        height: var(--form-height);
+        margin-inline: 1rem;
+        background: var(--clr-white);
+        border-radius: .75rem;
+        overflow: visible;
+        
+        box-shadow: rgba(123, 119, 119, .15) 1px 12px 24px 1px;
+        padding: 2rem 1rem;
+    }
+
+    #form .form_sidebar {
+        width: 100%;
+        order: -1;
+    }
+
+    .button_container {
+        width: calc(var(--form-width) + 2rem);
+        position: absolute;
+        /* 1.5rem is the line height - we substracted it to have accurate positioning underneath */
+        /* -2rem is the padding added on the form field */
+        /* -1rem is at the end is to balance out the line height with the set height */
+        transform: translate(-1rem, calc(var(--form-offset) + var(--form-offset) - 1.5rem - 2rem + 1rem));
+        margin-top: 1.25rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .button_container.right {
+        justify-content: right;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #form {
+        background: var(--clr-white);
+        flex-direction: row;
+        border-radius: .75rem;
+        overflow: hidden;
+        padding: 1rem 0 1rem 1rem;
+        align-items: stretch;
+    }
+
+    .form_fields {
+        position: static;
+        top: unset;
+        left: unset;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 3rem clamp(3rem, 6.25vw, 5rem);
+        padding-bottom: 0;
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #form .form_sidebar {
+        width: auto;
+    }
+
+    .button_container {
+        width: 100%;
+        position: static;
+        transform: unset;
+        margin: 0;
+    }
+}

@@ -1,0 +1,116 @@
+:root {
+  --clr-primary-blue950: hsl(213, 96%, 18%);
+  --clr-primary-blue300: hsl(228, 100%, 84%);
+  --clr-primary-blue200: hsl(206, 94%, 87%);
+  --clr-primary-purple600: hsl(243, 100%, 62%);
+  --clr-primary-red500: hsl(354, 84%, 57%);
+
+  --clr-neutral-blue100: hsl(218, 100%, 97%);
+  --clr-neutral-blue50: hsl(231, 100%, 99%);
+  --clr-neutral-grey500: hsl(231, 11%, 63%);
+  --clr-neutral-purple200: hsl(229, 24%, 87%);
+  --clr-white: hsl(0, 100%, 100%);
+
+  --ff: 'Ubuntu', sans-serif;
+
+  --form-offset: 73px;
+  --form-width: calc(100% - 2rem);
+  --form-height: auto;
+  --form-field-height-mobile: auto;
+  --form-field-height-desktop: 400px;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+
+/* Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* General style */
+body {
+  font-family: var(--ff);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--clr-neutral-grey500);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: clamp(1.5rem, 6.42vw,2rem);
+  font-weight: 700;
+  color: var(--clr-primary-blue950);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+@media only screen and (min-width: 0rem) {
+  body {
+    margin: auto;
+    background: var(--clr-neutral-blue50);
+  }
+
+  #root {
+    width: 100%;
+    margin: auto;
+    max-width: 62rem;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  body {
+    margin: auto;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: var(--clr-neutral-blue100);
+  }
+
+  #root {
+    padding-inline: 1rem;
+  }
+}

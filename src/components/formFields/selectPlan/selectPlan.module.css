@@ -1,0 +1,220 @@
+@media only screen and (min-width: 0rem) {
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .content_title {
+        margin-bottom: 1rem;
+    }
+
+    .content_text {
+        margin-bottom: 1.25rem;
+        /* 90% to make sure we have 2 words a the bottom line */
+        width: 90%;
+    }
+
+    .content_plan_wrapper {
+        display: inherit;
+        width: 100%;
+    }
+
+    .plan_list {
+        display: inherit;
+        width: 100%;
+        flex-direction: column;
+        gap: .75rem;
+    }
+
+    .plan {
+        list-style: none;
+    }
+
+    .plan button {
+        border: 2px solid var(--clr-neutral-purple200);
+        border-radius: .5rem;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.25rem 1rem;
+    }
+
+    .plan button.yearly {
+        align-items: stretch;
+    }
+
+    .plan button:hover {
+        cursor: pointer;
+        background: var(--clr-neutral-blue100);
+        border: 2px solid var(--clr-primary-purple600);
+    }
+
+    .plan button.active {
+        pointer-events: none;
+        background: var(--clr-neutral-blue100);
+        border: 2px solid var(--clr-primary-purple600);
+    }
+
+    .plan button .img_container {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        margin-right: .75rem;
+    }
+
+    .plan button .img_container img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .plan_text_wrapper {
+        display: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: stretch;
+        gap: .5rem;
+    }
+
+    .plan_title {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    .plan_text {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--clr-neutral-grey500);
+        line-height: 1;
+    }
+
+    .plan_sale {
+        font-size: .8rem;
+        margin: 0;
+        font-weight: 500;
+        color: var(--clr-primary-blue950);
+        line-height: 1;
+    }
+
+    .content_plan_switcher {
+        display: inherit;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.25rem;
+    }
+
+    .switch_text {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .monthly_active,
+    .yearly_active {
+        color: var(--clr-primary-blue950);
+    }
+
+    .switch_container {
+        margin-inline: 1.25rem;
+    }
+
+    .switch_button_wrapper {
+        width: 42px;
+        height: 24px;
+    }
+
+    .switch {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: var(--clr-primary-blue950);
+        border: none;
+        border-radius: .75rem;
+        overflow: hidden;
+    }
+
+    .circle {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: var(--clr-white);
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 
+            left .14s ease;
+    }
+
+    .circle_left {
+        /* From .25rem to calc(100% - 1rem - .25rem) */
+        /* -1rem is the width & -.25rem is the left padding */
+        left: .25rem;
+    }
+
+    .circle_right {
+        left: calc(100% - 1rem - .25rem);
+    }
+
+    .error {
+        margin-top: .5rem;
+    }
+
+    .error p {
+        list-style: none;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--clr-primary-red500);
+        line-height: 1;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    .content_title {
+        margin-bottom: 1rem;
+    }
+
+    .content_text {
+        margin-bottom: 2.4rem;
+    }
+
+    .plan_list {
+        flex-direction: row;
+        height: 180px;
+        width: 100%;
+    }
+
+    .plan {
+        width: 100%;
+    }
+
+    .plan button {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: stretch;
+    }
+
+    .plan_text_wrapper {
+        margin-top: auto;
+    }
+
+    .content_plan_switcher {
+        margin-top: 2.4rem;
+        background-color: var(--clr-neutral-blue100);
+        padding: .75rem;
+    }
+}

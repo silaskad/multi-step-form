@@ -1,0 +1,104 @@
+@media only screen and (min-width: 0rem) {
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .content_title {
+        margin-bottom: 1rem;
+    }
+
+    .content_text {
+        margin-bottom: 1.25rem;
+        width: 100%;
+    }
+
+    .content_addons_wrapper {
+        display: inherit;
+        width: 100%;
+    }
+
+    .addons_list {
+        display: inherit;
+        width: 100%;
+        flex-direction: column;
+        gap: .75rem;
+    }
+
+    .addons {
+        list-style: none;
+        display: inherit;
+        justify-content: flex-start;
+        align-items: center;
+        border: 2px solid var(--clr-neutral-purple200);
+        border-radius: .5rem;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        padding: 1.25rem 1rem;
+    }
+
+    .active_addons {
+        border: 2px solid var(--clr-primary-purple600);
+        background: var(--clr-neutral-blue100);
+    }
+
+    .addons button {
+        border: 2px solid var(--clr-neutral-purple200);
+        border-radius: .25rem;
+        background: transparent;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addons button.active {
+        background: var(--clr-primary-purple600);
+        border: 2px solid var(--clr-primary-purple600);
+    }
+
+    .text_group {
+        display: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: stretch;
+        margin: 0 auto 0 1rem;
+    }
+
+    .addons_title {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: .25rem;
+    }
+
+    .addons_text {
+        font-size: .8rem;
+        font-weight: 500;
+        color: var(--clr-neutral-grey500);
+        line-height: 1;
+    }
+
+    .addons_price {
+        font-size: .85rem;
+        margin: 0;
+        font-weight: 500;
+        color: var(--clr-primary-purple600);
+        line-height: 1;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    .content_text {
+        margin-bottom: 2.4rem;
+    }
+}
