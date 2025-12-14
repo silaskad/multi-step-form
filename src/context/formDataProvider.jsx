@@ -8,7 +8,7 @@ export function FormDataProvider({ children }) {
 
     useEffect(() => {
         async function getProduct() {
-            const res = await fetch('http://localhost:5173/api/product', { signal: controller.signal });
+            const res = await fetch('/api/product', { signal: controller.signal });
             const data = await res.json();
             setProduct(data);
         }

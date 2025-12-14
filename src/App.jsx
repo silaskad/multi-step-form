@@ -28,7 +28,7 @@ function App() {
 
   async function submitForm() {
     try {
-      const res = await fetch("http://localhost:5173/api/submit", {
+      const res = await fetch("/api/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
