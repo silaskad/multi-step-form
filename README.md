@@ -17,8 +17,6 @@ A fully interactive, responsive multi-step form built with React, Vite JSX SSR, 
 * [Author](#author)
 * [Live Project](#live-project)
 
----
-
 ## Overview
 
 ### Features
@@ -35,15 +33,11 @@ Users can:
 
 The form state is managed via React Context, keeping data accessible across components without prop drilling. Server-side rendering ensures fast initial load times and SEO-friendly markup.
 
----
-
 ### Screenshots
 
 ![Preview Mobile](./public/assets/images/screenshot-mobile.png)
 ![Preview Desktop](./public/assets/images/screenshot-desktop.png)
 ![Summary Step](./public/assets/images/screenshot-summary.png)
-
----
 
 ## My process
 
@@ -55,8 +49,6 @@ The form state is managed via React Context, keeping data accessible across comp
 * Vanilla CSS with modular organization
 * Flexbox and Grid for responsive layouts
 * NanoID for unique identifiers where needed
-
----
 
 ## Key learnings
 
@@ -86,8 +78,6 @@ res.status(200).set({ 'Content-Type': 'text/html' }).send(html);
 
 Optimized layout for mobile and desktop devices, and added focus/hover states for accessibility compliance and polished UI interactions.
 
----
-
 ## Continued development
 
 * Add persistent backend storage for submitted forms
@@ -96,8 +86,6 @@ Optimized layout for mobile and desktop devices, and added focus/hover states fo
 * Add unit and integration tests for form validation and context state
 * Expand API to handle multiple form types and advanced submission workflows
 
----
-
 ## Useful resources
 
 * React Docs — [https://react.dev/](https://react.dev/)
@@ -105,12 +93,9 @@ Optimized layout for mobile and desktop devices, and added focus/hover states fo
 * MDN Form Validation — [https://developer.mozilla.org/](https://developer.mozilla.org/)
 * Express API patterns — [https://expressjs.com/](https://expressjs.com/)
 
----
-
 ## Live project
 
-You can view th live project online here
----
+You can view the live project [online here](https://multi-step-form-67qs.onrender.com)
 
 ## Author
 
